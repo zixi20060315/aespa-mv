@@ -1,5 +1,5 @@
 const firebaseConfig = {
-  apiKey: "AIzaSy...",
+  apiKey: "AIzaSyC8lT0mGa9dff3Kwqv9KvRjXnp5aX4q9XI",
   authDomain: "aespa-stage.firebaseapp.com",
   projectId: "aespa-stage",
   storageBucket: "aespa-stage.firebasestorage.app",
