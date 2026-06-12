@@ -1,10 +1,10 @@
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSy...",
+  authDomain: "aespa-stage.firebaseapp.com",
+  projectId: "aespa-stage",
+  storageBucket: "aespa-stage.firebasestorage.app",
+  messagingSenderId: "307460974300",
+  appId: "1:307460974300:web:ba89b28f008c18c1cef619"
 };
 
 const hasFirebaseConfig = Object.values(firebaseConfig).every(
