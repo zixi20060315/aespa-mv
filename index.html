@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AESPA MV ARCHIVE - browse aespa music videos by title and release year." />
+  <title>AESPA MV ARCHIVE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html" aria-label="AESPA MV ARCHIVE home">
+        <span class="brand-mark">AE</span>
+        <span>AESPA MV ARCHIVE</span>
+      </a>
+      <a class="deploy-link" href="https://vercel.com/new" target="_blank" rel="noreferrer">Deploy</a>
+    </nav>
+
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Firestore powered music video catalog</p>
+        <h1 id="page-title">AESPA MV ARCHIVE</h1>
+        <p class="hero-text">A fast, responsive archive for aespa music videos with automatic YouTube embeds and real-time Firestore data.</p>
+      </div>
+      <div class="hero-panel" aria-hidden="true">
+        <div class="orbital orbital-one"></div>
+        <div class="orbital orbital-two"></div>
+        <div class="signal-grid">
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main class="main">
+    <section class="toolbar" aria-label="Search songs">
+      <label class="search-label" for="searchInput">Search</label>
+      <input id="searchInput" class="search-input" type="search" placeholder="Search songs..." autocomplete="off" />
+      <p id="songCount" class="song-count">Loading archive...</p>
+    </section>
+
+    <section id="statusMessage" class="status-message" role="status">Connecting to Firestore...</section>
+    <section id="songsGrid" class="songs-grid" aria-label="Aespa songs"></section>
+  </main>
+
+  <footer class="footer">
+    <p>Built for Firebase Firestore, GitHub, and Vercel deployment.</p>
+  </footer>
+
+  <script type="module" src="app.js?v=1"></script>
+</body>
+</html>

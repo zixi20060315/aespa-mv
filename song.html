@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AESPA MV ARCHIVE song detail page with embedded YouTube music video." />
+  <title>Song | AESPA MV ARCHIVE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header compact-header">
+    <nav class="nav">
+      <a class="brand" href="index.html" aria-label="AESPA MV ARCHIVE home">
+        <span class="brand-mark">AE</span>
+        <span>AESPA MV ARCHIVE</span>
+      </a>
+      <a class="back-link" href="index.html">Back to archive</a>
+    </nav>
+  </header>
+
+  <main class="detail-main">
+    <section id="detailStatus" class="status-message" role="status">Loading song...</section>
+
+    <article id="songDetail" class="song-detail" hidden>
+      <div class="detail-heading">
+        <p class="eyebrow">Music video</p>
+        <h1 id="songTitle">Song title</h1>
+        <p id="songYear" class="detail-year">Release year</p>
+      </div>
+
+      <div id="videoFrame" class="video-frame"></div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <p>Videos are embedded from the YouTube URL stored in Firestore.</p>
+  </footer>
+
+  <script type="module" src="app.js?v=1"></script>
+</body>
+</html>
