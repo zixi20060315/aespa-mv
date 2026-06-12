@@ -13,8 +13,8 @@
     projectId: "aespa-stage",
     storageBucket: "aespa-stage.firebasestorage.app",
     messagingSenderId: "307460974300",
-    appId: "1:307460974300:web:3c906f7e13aac52acef619",
-    measurementId: "G-Y9HMBRVKJJ"
+    appId: "1:307460974300:web:ba89b28f008c18c1cef619",
+    measurementId: "G-K9SJWCWPM8"
   };
 
   // Initialize Firebase
